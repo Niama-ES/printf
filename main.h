@@ -100,6 +100,6 @@ void func_init_params(paras *para, va_list lv);
 char *get_precision(char *p, paras *para, va_list lv);
 
 /* _print.c module */
-int _pintf(const char *format, ...);
+int _printf(const char *format, ...);
 
 #endif
