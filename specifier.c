@@ -55,12 +55,12 @@ return (0);
 }
 
 /**
- * get_flag - finds the flag func
+ * func_get_flag - finds the flag func
  * @s: the format string
  * @para: the parameter struct
  * Return: 1 if the flag is there and 0 if not
  */
-int get_flag(char *s, paras *para)
+int func_get_flag(char *s, paras *para)
 {
 int i = 0;
 
@@ -86,12 +86,12 @@ return (i);
 }
 
 /**
- * get_modifier - finds the modifier func
+ * func_get_modifier - finds the modifier func
  * @s: the format string
  * @para: the the parameters struct
  * Return: returns 1 if l or h modifier is there
  */
-int get_modifier(char *s, paras *para)
+int func_get_modifier(char *s, paras *para)
 {
 int i = 0;
 
