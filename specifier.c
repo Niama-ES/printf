@@ -62,7 +62,9 @@ return (4);
 func_print_rev(lv, para);
 return (0);
 }
-int (*f)(va_list, paras *) = get_specifier(s);
+int (*f)(va_list, paras *);
+
+(*f)(va_list, paras *) = get_specifier(s);
 if (f)
 return (f(lv, para));
 return (0);
