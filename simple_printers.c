@@ -42,6 +42,14 @@ str--;
 for (; len > 0; len--, str--)
 sum += _putchar(*str);
 }
+else
+{
+_putchar('[');
+_putchar('%');
+_putchar('r');
+_putchar(']');
+sum = 4;
+}
 return (sum);
 }
 
