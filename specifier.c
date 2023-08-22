@@ -3,10 +3,9 @@
 /**
  * get_specifier - finds the format func
  * @s: the format string
- *
  * Return: the number of bytes printed
  */
-int (*get_specifier(char *s))(va_list lv, paras *para);
+int (*get_specifier(char *s))(va_list lv, paras *para)
 {
 specifier_t specifiers[] = {
 {"c", func_print_char},
@@ -60,7 +59,7 @@ _putchar('r');
 _putchar(']');
 return (4);
 }
-print_rev(lv, para);
+func_print_rev(lv, para);
 return (0);
 }
 int (*f)(va_list, paras *) = get_specifier(s);
