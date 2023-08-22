@@ -47,22 +47,8 @@ return (NULL);
  */
 int func_get_print(char *s, va_list lv, paras *para)
 {
-if (*s == 'r')
-{
-char *str = va_arg(lv, char *);
-
-if (str == NULL)
-{
-_putchar('[');
-_putchar('%');
-_putchar('r');
-_putchar(']');
-return (4);
-}
-func_print_rev(lv, para);
-return (0);
-}
-int (*f)(va_list lv, paras *para) = get_specifier(s);
+int (*f)(va_list lv, paras *para);
+f = get_specifier(s);
 if (f)
 return (f(lv, para));
 return (0);
