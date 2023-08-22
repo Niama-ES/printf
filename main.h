@@ -13,7 +13,7 @@
 #define CONVERT_UNSIGNED     2
 
 /**
-* struct params - params struct
+* struct parameters - parameters struct
 * @unsign: flag if unsigned value
 * @plus_flag: on if plus_flag specified
 * @space_flag: on if hashtag_flag specified
@@ -42,7 +42,7 @@ unsigned int l_modifier   : 1;
 } paras;
 
 /**
-* etruct specifier - struct token
+* struct specifier - struct token
 * @specifier: format token
 * @f: the function associated
 */
