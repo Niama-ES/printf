@@ -69,7 +69,7 @@ int func_print_unsigned(va_list lv, paras *para);
 int func_print_address(va_list lv, paras *para);
 
 /* specifier.c module */
-int *get_specifier(char *s)(va_list lv, paras *para);
+int (*get_specifier(char *s))(va_list lv, paras *para);
 int func_get_print(char *s, va_list lv, paras *para);
 int func_get_flag(char *s, paras *para);
 int func_get_modifier(char *s, paras *para);
