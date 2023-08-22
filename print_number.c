@@ -23,12 +23,12 @@ i++;
 return (i);
 }
 /**
- * print_number - prints a number with options
+ *func_print_number - prints a number with options
  * @str: the base number as a string
  * @para: the parameter struct
  * Return: chars printed
  */
-int print_number(char *str, paras *para)
+int func_print_number(char *str, paras *para)
 {
 unsigned int i = _strlen(str);
 int neg = (!para->unsign && *str == '-');
