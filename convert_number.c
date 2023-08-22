@@ -41,7 +41,7 @@ int func_print_HEX(va_list lv, paras *para)
 {
 unsigned long l;
 int c = 0;
-int *str;
+char *str;
 
 if (para->l_modifier)
 	l = (unsigned long)va_arg(lv, unsigned long);

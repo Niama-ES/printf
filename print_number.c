@@ -30,7 +30,7 @@ return (i);
  */
 int print_number(char *str, paras *para)
 {
-unsigned int i = strlen(str);
+unsigned int i = _strlen(str);
 int neg = (!para->unsign && *str == '-');
 
 if (!para->precision && *str == '0' && !str[1])
@@ -58,7 +58,7 @@ return (func_print_number_left_shift(str, para));
  */
 int func_print_number_right_shift(char *str, paras *para)
 {
-unsigned int n = 0, neg, neg2, i = strlen(str);
+unsigned int n = 0, neg, neg2, i = _strlen(str);
 char pad_char = ' ';
 
 if (para->zero_flag && !para->minus_flag)

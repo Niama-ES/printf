@@ -53,8 +53,8 @@ else if (para->h_modifier)
 l = (unsigned short int)va_arg(lv, unsigned int);
 else
 l = (unsigned int)va_arg(lv, unsigned int);
-params->unsign = 1;
-return (print_number(convert(l, 10, CONVERT_UNSIGNED, para), para));
+para->unsign = 1;
+return (func_print_number(convert(l, 10, CONVERT_UNSIGNED, para), para));
 }
 
 /**
@@ -75,5 +75,5 @@ return (_puts("(nil)"));
 str = convert(n, 16, CONVERT_UNSIGNED | CONVERT_LOWERCASE, para);
 *--str = 'x';
 *--str = '0';
-return (print_number(str, para));
+return (func_print_number(str, para));
 }

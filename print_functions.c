@@ -37,7 +37,7 @@ else if (para->h_modifier)
 l = (short int) va_arg(lv, int);
 else
 l = (int) va_arg(lv, int);
-return (print_number(convert(l, 10, 0, para), para));
+return (func_print_number(convert(l, 10, 0, para), para));
 }
 
 /**
@@ -53,7 +53,7 @@ char *str = va_arg(lv, char *), pad_char = ' ';
 unsigned int pad = 0, sum = 0, i = 0, j;
 
 (void) para;
-switch ((int) (str))
+switch ((int) (!str))
 case 1:
 str = NULL_STRING;
 j = pad = _strlen(str);
