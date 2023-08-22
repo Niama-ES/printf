@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * init_params - clears struct fields and reset buf
+ * func_init_params - clears struct fields and reset buf
  * @para: the parameters struct
  * @lv: the argument pointer
  *
  * Return: void
  */
-void init_params(paras *para, va_list lv)
+void func_init_params(paras *para, va_list lv)
 {
 para->unsign = 0;
 
